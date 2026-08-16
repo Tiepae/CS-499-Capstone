@@ -31,7 +31,7 @@
             color: white;
         }
 
-        h2, h3, h5 {
+        h2, h3, h5, h6 {
             font-size: 26px;
             border-bottom: 2px solid white;
             padding-bottom: 5px;
@@ -87,7 +87,8 @@
         <h3 style="color: white;">Software Engineering & Design</h3>
 
         <p style="color: white;">
-            The first enhancement was my Software Design and Engineering enhancement. This enhancement involved separating the logic and UI of my Activity class, which originally performed most of the key functionality of my inventory app, including inventory management. Before this enhancement, much of the functionality was performed within one class. 
+            The first enhancement was my Software Design and Engineering enhancement. This enhancement involved separating the logic and UI of my Activity class, which originally performed most of the key functionality of my inventory app, including inventory management. 
+            Before this enhancement, much of the functionality was performed within one class. 
             From a simplicity standpoint, this made sense when I originally designed it that way because it allowed me to keep most of the heavy lifting in one place without having to move back and forth between classes. 
             However, this approach is not ideal in the long run because if another developer, or even myself, wanted to add enhancements or fix bugs, the code could quickly become cluttered and difficult to manage. This could lead to a number of problems that would slow down future development and make bug fixing more difficult.
         </p>
@@ -97,6 +98,13 @@
         <p style="color: white;">
             I have utilized some knowledge of Data Structures & Algorithms, specifically by using a HashMap to negate duplicate data. 
             Originally, I planned to use the HashMap to search for items in my inventory, but I realized that using a linear search for my app was more efficient and reworked my HashMap idea to help filter out duplicate data.
+        </p>
+                <h6 style="color: white;"> Database </h6>
+		<p style="color: white;"> The original version of my application used SharedPreferences to save the data. One of the biggest improvements I made was replacing SharedPreferences with SQLite. 
+            This gave me a much better understanding of why choosing the right storage solution is important as an application grows. 
+            Moving from SharedPreferences to SQLite also helped me better understand database design and software engineering by giving the application a more reliable way to store data.
+            Replacing SharedPreferences with SQLite meant I had to rethink how information was saved, loaded, and updated throughout the application. 
+            Some of the biggest challenges I ran into were keeping the HashMap and database synchronized and making sure inventory changes still saved correctly after restarting the application. I also added parameterized database queries to improve security and reduce the chance of invalid data being stored. 
         </p>
 
     </div>
