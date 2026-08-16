@@ -31,7 +31,7 @@
             color: white;
         }
 
-        h2, h3, h5, h6 {
+        h2, h3, h5, h6, h7 {
             font-size: 26px;
             border-bottom: 2px solid white;
             padding-bottom: 5px;
@@ -99,14 +99,23 @@
             I have utilized some knowledge of Data Structures & Algorithms, specifically by using a HashMap to negate duplicate data. 
             Originally, I planned to use the HashMap to search for items in my inventory, but I realized that using a linear search for my app was more efficient and reworked my HashMap idea to help filter out duplicate data.
         </p>
-                <h6 style="color: white;"> Database </h6>
+                <h6 style="color: white;"> Database & Security </h6>
 		<p style="color: white;"> The original version of my application used SharedPreferences to save the data. One of the biggest improvements I made was replacing SharedPreferences with SQLite. 
             This gave me a much better understanding of why choosing the right storage solution is important as an application grows. 
             Moving from SharedPreferences to SQLite also helped me better understand database design and software engineering by giving the application a more reliable way to store data.
             Replacing SharedPreferences with SQLite meant I had to rethink how information was saved, loaded, and updated throughout the application. 
-            Some of the biggest challenges I ran into were keeping the HashMap and database synchronized and making sure inventory changes still saved correctly after restarting the application. I also added parameterized database queries to improve security and reduce the chance of invalid data being stored. 
+            Some of the biggest challenges I ran into were keeping the HashMap and database synchronized and making sure inventory changes still saved correctly after restarting the application. I also added parameterized database queries to improve security and reduce the chance of invalid data being stored.
         </p>
-
+		<p style="color: white;"> Security has also been an important part of improving my application. I added parameterized database queries to improve security and reduce the chance of invalid data being stored. 
+			This helped me understand that security needs to be considered when developing an application rather than being something added later. </p>
+		<h7 style="color: white;"> Portfolio Artifacts </h7>
+		<p style="color: white;"> 	The main artifact I selected for my ePortfolio is an Android Inventory App that I originally created during my CS-360 Mobile Architecture and Programming course. 
+			The application is designed for small businesses or people who want to keep track of their inventory. I selected this specific artifact because it was one of the few projects I had to develop from scratch and it allowed me to demonstrate several of the skills I developed throughout the Computer Science program. 
+			Initially, I had to learn how to use Java along with Android Studio for the first time. With determination and commitment, I was able to figure out the possibilities I could create with these tools. It was much more than code for me; it was a visual set piece to show what my code did when given a user interface.
+		 </p>
+		<p style="color: white;"> The enhancements to this artifact demonstrate several areas of my computer science knowledge. The Software Design and Engineering enhancement involved separating the logic and UI of my Activity class, which originally performed most of the key functionality of my inventory app, including inventory management. 
+			The Data Structures and Algorithms enhancement involved using a HashMap to help filter out duplicate data after realizing that a linear search was more efficient for my search functionality. The Database enhancement involved replacing SharedPreferences with SQLite and improving how information was saved, loaded, and updated. 
+			Together, these enhancements demonstrate my ability to improve an existing application, make changes based on problems I encounter, and apply concepts from different areas of computer science to one project. </p>
     </div>
 </body>
 </html>
