@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15sp"
+    tools:context=".SMSActivity"
+    android:background="@drawable/login_background">
+
+    <!-- Created Button and Textview for permission handling -->
+    <Button
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request SMS permission"
+        android:onClick="btnPermission"
+        />
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:textColorHint="@color/white"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtSmsStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Permission"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</LinearLayout>
