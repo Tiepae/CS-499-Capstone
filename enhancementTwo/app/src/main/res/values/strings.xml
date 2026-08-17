@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ProjectOne_UI</string>
+    <string name="title_activity_data_grid">DataGridActivity</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".DataGridActivity">
+
+    <!-- Grid layout for the UI -->
+    <GridLayout
+        android:id="@+id/myGrid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnRequestPermission"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- CARD 1: View Inventory -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/inventory_click"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View Inventory"
+                android:textColor="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD 2: Settings -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_click"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/vibrant_orange">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Color Settings"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/settings_symbol"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <!-- SMS Permissions Button -->
+    <Button
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS PERMISSIONS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

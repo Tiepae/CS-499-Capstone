@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDecrement"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:drawableBottom="@drawable/remove_icon"/>
+
+    <TextView
+        android:id="@+id/itemCount"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:drawableBottom="@drawable/add_icon"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="!"
+        android:drawableBottom="@drawable/delete_button"/>
+
+</LinearLayout>
