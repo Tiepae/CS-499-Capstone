@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProjectOne_UI" parent="Theme.Material3.DayNight">
+        <item name="windowActionBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/dark_grey</item>
+        <item name="actionBarStyle">@style/TransparentActionBar</item>
+    </style>
+
+    // Makes the Actionbar transparent
+    <style name="TransparentActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">@android:color/transparent</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Theme.ProjectOne_UI" parent="Base.Theme.ProjectOne_UI" />
+</resources>

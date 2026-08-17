@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Added SMS permissions Below -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectOne_UI">
+
+        <activity
+            android:name=".ActivityInventory"/>
+
+        <activity android:name=".SettingsActivity"/>
+
+        <activity
+            android:name=".SMSActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DataGridActivity"
+            android:exported="true"
+            android:label=""
+            android:theme="@style/Theme.ProjectOne_UI" />
+
+        <!-- Make MainActivity start first -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjectOne_UI">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
